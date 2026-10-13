@@ -22,5 +22,25 @@ int main()
   }
 
   printf("Perfect, we have %d number of players! Let enter the names of all the players!\n", nr_of_players);
+
+  char players[6][20] = {0};
+
+  for(int player = 0; player < nr_of_players; player++)
+  {
+    printf("Enter player %d name: ", player);
+    scanf("%19s", players[player]);
+    printf("Add player %s\n", players[player]);
+  }
+
+  int score_board[6][13] = {0};
+
+  for(int player = 0; player < 6; player++)
+  {
+    for(int score = 0; score < 15; score++)
+    {
+      score_board[player][score] = -1;
+    }
+  }
+
   return 0;
 }
