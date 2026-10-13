@@ -32,7 +32,7 @@ int main()
     printf("Add player %s\n", players[player]);
   }
 
-  int score_board[6][13] = {0};
+  int score_board[6][20] = {0};
 
   for(int player = 0; player < 6; player++)
   {
@@ -41,6 +41,8 @@ int main()
       score_board[player][score] = -1;
     }
   }
+
+  
 
   return 0;
 }
